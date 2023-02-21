@@ -5,7 +5,7 @@ Desarrollado por Maurén Hermosillo
 
 
 ## Consigna
-A lo largo de de este proyecto veremos cómo se realizó un proyecto de Data Engineer y Machine Learning, en uno de los sectores empresariales más demandados en los últimos años, me refiero a las **plataformas de streaming**, la solicitud del proyecto se divide en dos importantes partes:
+A lo largo de de este proyecto veremos cómo se realizó un proceso de Data Engineer y Machine Learning, en uno de los sectores empresariales más demandados en los últimos años, me refiero a las **plataformas de streaming**, la solicitud del proyecto se divide en dos importantes partes:
 
 ## 1ra. Data Engeneering
 * Extraer datos de archivos
@@ -105,7 +105,7 @@ Se puede revisar el código de las funciones en el archivo [consultas01.ipynb]ht
 1. Una vez entrenado el modelo podemos utilizarlo para hacer predicciones
 2. Se hace al azar un predicción para usuario y película
 
-`EVALUACION`
+`EVALUACIÓN`
 1. Se evalúa el modelo en el conjunto de prueba
 2. Se imprime la precisión del modelo por el accuracy.rmse
 
@@ -114,6 +114,6 @@ Se puede revisar el código de las funciones en el archivo [consultas01.ipynb]ht
 
 
 
-#### [Link a video explicativo confeccionado para equipo de data analytics](https://www.youtube.com/watch?v=o7A5xAoOQqE "Proyecto Individual data engineer - Henry's bootcamp")
+#### [Link a video explicativo con un breve resumen de lo realizado en este proyecto] https://drive.google.com/drive/folders/1MI-5g6GYWyn2Wyy9LFDc4QgOfIZBJuml?usp=share_link "Proyecto Individual 1 Data Engeneering y Machine Learning")
 
 <hr> 
