@@ -1,6 +1,4 @@
-<!---
 
--->
 # Proyecto Individual  - Data Engeneering y Machine Learning
 Desarrollado por Maurén Hermosillo
 
@@ -27,7 +25,7 @@ El resultado de todo esto, tendrá que ser un sistema de recomendación de pelí
 
 ### Proceso de "ETL" (Extract, transform, load) en VisualStudioCode - Python:
 
-**Nota:** Los archivos originales, así como los archivos que fueron resultando a lo largo de este proyecto, estarán alojados en este Drive para su consulta, ya que por el tamaño no es viable que esten en github. ****
+**Nota:** Los archivos originales, así como los archivos que fueron resultando a lo largo de este proyecto, estarán alojados en este Drive**** para su consulta, ya que por el tamaño no es viable que esten en [github] https://github.com/Maurengit/Proyecto_Individual_1_DTS/tree/master
 
 `EXTRACCIÓN DE DATOS`
 1. Se utilizó Visual Studio con el lenguaje de programación Pyton y la librería pandas.
@@ -43,7 +41,7 @@ El resultado de todo esto, tendrá que ser un sistema de recomendación de pelí
 5. Separación de columna "duration" en dos ("duration_int" y "duration_type")
 6.  Unificar 4 plataformas a través de la función “concat” en un dataframe único "gdf_completo" facilitando el código de las consultas a desarrollar
 7.  Exportar CSV final completo.csv y por el peso del archivo se transformó a un .parquet con el mismo nombre con todas las transformaciones **** Drive
-Todo lo descrito anteriormente se puede revisar en el archivo Explorando-merge.ipynb  ****
+Todo lo descrito anteriormente se puede revisar en el archivo [Explorando-merge.ipynb]https://github.com/Maurengit/Proyecto_Individual_1_DTS/blob/master/Explorando_merge.ipynb
   
   <hr> 
 
@@ -56,20 +54,20 @@ Todo lo descrito anteriormente se puede revisar en el archivo Explorando-merge.i
 3. Cantidad de películas por plataforma con filtro de PLATAFORMA. (La función debe llamarse get_count_platform(platform))
 4. Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))
 
-Se puede revisar el código de las funciones en el archivo consultas.ipynb ****
+Se puede revisar el código de las funciones en el archivo [consultas01.ipynb]https://github.com/Maurengit/Proyecto_Individual_1_DTS/blob/master/consultas01.ipynb
 
 
 <hr>
 
 ### Deployment: Se utilizó el framework FastAPI, junto con uvicorn para perminirnos trabajar en un ambiente local y posteriormnete Se utilizó Deta.space para un ambiente público. 
-1. Generación de archivo [main.py](https://github.com/amysler/Proyecto_individual_data_engineer-Henry_bootcamp-DTS06/blob/main/main.py)**** 
+1. Generación de archivo [main.py]https://github.com/Maurengit/Proyecto_Individual_1_DTS/blob/master/main.py
 2. Importación de las librerías a utilizar
 3. Declaración de la creación de la API 
 4. Declaración de la ruta de acceso para la base de datos (consultas.cvs)
 5. Creación de un directorio índex con mensaje de bienvenida a la interfaz
 6. Desarrollo de las consultas
 7. Creación de una cuenta en Deta.space
-8. Publicación al público de las consultas, se puede revisar en este enlace: https://deta.space/discovery/r/k56gavvdiltpbpz5 ingrese /docs
+8. Publicación al público de las consultas, se puede revisar en este [enlace:] https://deta.space/discovery/r/k56gavvdiltpbpz5 ingrese /docs
 
 **Nota:** Para realizar las consultas en deta.space considere:
 **Platform -Plataformas** únicamente y con minúsculas, amazon, disney, netflix y hulu
@@ -88,12 +86,12 @@ Se puede revisar el código de las funciones en el archivo consultas.ipynb ****
 `EDA (analisis exploratorio de datos)`
 1. Se ingesta nuestro archivo completo.parquet
 2. se utilizó la libreria dataprep para el Anális Exploratorio de Datos, esta librería nos brinda un análisis general de manera visual datos estructurados y sin estructurar para el análisis y detección de anomalías.
-3. Se puede ver en el archivo EDA.ipynb****
-4. Se realizó una exportación a un archivo html, para que sea más fácil su navegacion reporte_eda.html ****
+3. Se puede ver en el archivo [EDA.ipynb]https://github.com/Maurengit/Proyecto_Individual_1_DTS/blob/master/EDA.ipynb
+4. Se realizó una exportación a un archivo html, para que sea más fácil su navegacion [reporte_eda.html]https://github.com/Maurengit/Proyecto_Individual_1_DTS/blob/master/reporte_eda.html
 
 `MODELADO`
 1. Para el modelado nos ayudamos de la librería Surprise en conjunto con pandas
-2. Y como el desarrollo de modelos es muy demandante para los equipos, también se utilizó google colab
+2. Y como el desarrollo de modelos es muy demandante para los equipos, también se utilizó google colab Drive...  y lo pase también a github Modelo.ipynb  ....
 3. Se siguió trabajando con el archivo completo.parquet, que contiene todos los datos Drive ****
 4. Se verifica que no existan datos nulos, y se toma la decisión que para el desarrollo de este modelo sólamente se requeren tres campos de del dataset que son: id (identificador único de películas), userId(identificador único de cada usuario) y calificación (o score que es la puntuación que cada usuario le dió a determinadas películas o series)
 5. Para sistema de recomendaciones funciona muy bien SVD (Singular Value Decomposition) SVD es una técnica matemática poderosa que se utiliza en los sistemas de recomendación para analizar la matriz de interacciones entre los usuarios y los elementos y descomponerla en matrices más simples que contienen información sobre los patrones de comportamiento de los usuarios y las características de los elementos. Esto permite mejorar la precisión y eficiencia del sistema de recomendación al reducir el ruido y la redundancia en la matriz de interacciones.
